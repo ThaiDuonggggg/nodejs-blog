@@ -1,25 +1,44 @@
 <nav class='navbar navbar-expand-lg navbar-light bg-light'>
-    <a class='navbar-brand' href='#'>Navbar</a>
-    <button
-        class='navbar-toggler'
-        type='button'
-        data-toggle='collapse'
-        data-target='#navbarSupportedContent'
-        aria-controls='navbarSupportedContent'
-        aria-expanded='false'
-        aria-label='Toggle navigation'
-    >
-        <span class='navbar-toggler-icon'></span>
-    </button>
+    <div class='container'>
+        <a class='navbar-brand' href='/'>Navbar</a>
+        <button
+            class='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarSupportedContent'
+            aria-controls='navbarSupportedContent'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+        >
+            <span class='navbar-toggler-icon'></span>
+        </button>
 
-    <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-        <ul class='navbar-nav mr-auto'>
-            <li class='nav-item active'>
-                <a class='nav-link' href='#'>Home <span class='sr-only'>(current)</span></a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link' href='#'>Link</a>
-            </li>
-        </ul>
+        <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+            <ul class='navbar-nav ml-auto'>
+                <li class='nav-item'>
+                </li>
+                <li class='nav-item dropdown'>
+                    <a
+                        class='nav-link dropdown-toggle'
+                        href='#'
+                        role='button'
+                        data-toggle='dropdown'
+                        aria-expanded='false'
+                    >
+                        <img
+                            src='https://d1hjkbq40fs2x4.cloudfront.net/2016-01-31/files/1045.jpg'
+                            alt='avatar-user'
+                            class='avatar-user'
+                        />
+                        Thái Dương
+                    </a>
+                    <div class='dropdown-menu'>
+                        <a class='nav-link' href='/courses/create'>Đăng khóa học</a>
+                        <a class='nav-link' href='/me/stored/courses'>Khóa học của tôi</a>
+                        <a class='nav-link' href='/me/stored/news'>Bài đăng của tôi</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

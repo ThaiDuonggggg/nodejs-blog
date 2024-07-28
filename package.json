@@ -1,36 +1,42 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --inspect src/index.js",
-    "watch": "sass --embed-source-map --watch src/resource/scss/app.scss src/public/css/app.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThaiDuonggggg/nodejs-blog.git"
-  },
-  "keywords": [
-    "nodejs",
-    "blog",
-    "nodejs",
-    "projectNodejs"
-  ],
-  "author": "duonght",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ThaiDuonggggg/nodejs-blog/issues"
-  },
-  "homepage": "https://github.com/ThaiDuonggggg/nodejs-blog#readme",
-  "dependencies": {
-    "express": "^4.19.2",
-    "express-handlebars": "^7.1.3"
-  },
-  "devDependencies": {
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.4",
-    "sass": "^1.77.8"
-  }
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --inspect src/index.js",
+        "watch": "sass --embed-source-map --watch src/resource/scss/app.scss src/public/css/app.css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ThaiDuonggggg/nodejs-blog.git"
+    },
+    "keywords": [
+        "nodejs",
+        "blog",
+        "nodejs",
+        "projectNodejs"
+    ],
+    "author": "duonght",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ThaiDuonggggg/nodejs-blog/issues"
+    },
+    "homepage": "https://github.com/ThaiDuonggggg/nodejs-blog#readme",
+    "dependencies": {
+        "express": "^4.19.2",
+        "express-handlebars": "^7.1.3",
+        "method-override": "^3.0.0",
+        "mongoose": "^8.5.1",
+        "mongoose-slug-updater": "^3.3.0"
+    },
+    "devDependencies": {
+        "husky": "^9.1.1",
+        "lint-staged": "^15.2.7",
+        "morgan": "^1.10.0",
+        "nodemon": "^3.1.4",
+        "prettier": "^3.3.3",
+        "sass": "^1.77.8"
+    }
 }
