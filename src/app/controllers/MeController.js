@@ -3,11 +3,13 @@ const Course = require('../models/Course');
 class CourseController {
     // [GET] /me/stored/courses
     storedCourses(req, res, next) {
-        Course.find({})
-            .lean()
-            .then((course) => {
-                res.render('me/stored-courses', { course });
-            })
+        Promise.all([Course.find({}).lean(), Course.countDocumentsWithDeleted({ deleted: true })])
+            .then(([courses, deletedCount]) =>
+                res.render('me/stored-courses', {
+                    deletedCount,
+                    courses,
+                }),
+            )
             .catch(next);
     }
 
